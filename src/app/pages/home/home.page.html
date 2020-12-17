@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Pipes </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list lines="full">
+    <ion-item *ngFor="let date of datesList">
+      <ion-label>{{ date | dateFormat }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
